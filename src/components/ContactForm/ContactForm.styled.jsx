@@ -21,15 +21,19 @@ export const Button = styled.button`
   padding: ${p => p.theme.spacing(2)};
   margin-top: ${p => p.theme.spacing(4)};
   font-size: 16px;
+	font-weight: 700;
   border-radius: ${p => p.theme.radii.md};;
-  border: 1px solid ${p => p.theme.colors.secondary};
-  background-color: ${p => p.theme.colors.primary};
+  border: 1px solid ${p => p.theme.colors.gray};
+  background-color: ${p => p.theme.colors.bgbutton};
+	transition: all 200ms linear;
   cursor: pointer;
-    &:hover {
-    background-color: ${p => p.theme.colors.backround};
-    color: ${p => p.theme.colors.text};
-  } 
-`;
+	  &:hover,
+		&:focus {
+		background-color: ${p => p.theme.colors.bgfocus};
+		border: 1px solid ${p => p.theme.colors.gray};
+		color: ${p => p.theme.colors.text};
+		}
+		`;
 
 export const Text = styled.p`
 text-align: left;

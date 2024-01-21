@@ -11,7 +11,7 @@ export const Container = styled.div`
   text-align: center;
   border: 1px solid ${p => p.theme.colors.secondary};
   border-radius: ${p => p.theme.radii.lg};
-  background-color: ${p => p.theme.colors.background};
+  background-color: ${p => p.theme.colors.bgcard};
 `;
 
 export const Title = styled.h2`

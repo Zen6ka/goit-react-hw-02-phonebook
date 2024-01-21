@@ -5,7 +5,10 @@ export const Input = styled.input`
   margin-top: ${p => p.theme.spacing(4)};
   margin-bottom: ${p => p.theme.spacing(4)};
   border-radius: ${p => p.theme.radii.lg};;
-  border: none;
+  border: 1px solid ${p => p.theme.colors.gray};
   outline: 0;
   background-color: ${p => p.theme.colors.white};
+	color: ${p => p.theme.colors.gray};
+	font-size: 16px;
+	font-weight: 500;
 `;
